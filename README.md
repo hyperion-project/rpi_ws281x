@@ -7,6 +7,17 @@ Preliminary support is now included for SK6812RGBW LEDs (yes, RGB + W)
 The LEDs can be controlled by either the PWM (2 independent channels)
 or PCM controller (1 channel) or the SPI interface (1 channel).
 
+### Bindings:
+
+Language-specific bindings for rpi_ws281x are available in:
+
+* Python - https://github.com/rpi-ws281x/rpi-ws281x-python
+* Rust - https://github.com/rpi-ws281x/rpi-ws281x-rust
+* Powershell - https://github.com/rpi-ws281x/rpi-ws281x-powershell
+* Java - https://github.com/rpi-ws281x/rpi-ws281x-java
+* CSharp - https://github.com/rpi-ws281x/rpi-ws281x-csharp
+* Go - https://github.com/rpi-ws281x/rpi-ws281x-go
+
 ### Background:
 
 The BCM2835 in the Raspberry Pi has both a PWM and a PCM module that
@@ -79,14 +90,14 @@ reponsibility for damage, harm, or mistakes.
   - Signal rate (400kHz to 800kHz).  Default 800kHz.
   - ledstring.invert=1 if using a inverting level shifter.
   - Width and height of LED matrix (height=1 for LED string).
-- Type 'scons' from inside the source directory.
+- Type `scons` from inside the source directory.
 
 ### Running:
 
-- Type 'sudo ./test' (default uses PWM channel 0).
+- Type `sudo ./test` (default uses PWM channel 0).
 - That's it.  You should see a moving rainbow scroll across the
   display.
-- More options are available, ./test -h should show them:
+- More options are available, `./test -h` should show them:
 ```
 ./test version 1.1.0
 Usage: ./test
